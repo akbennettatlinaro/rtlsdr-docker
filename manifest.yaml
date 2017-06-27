@@ -1,0 +1,19 @@
+image: linarotechnologies/rtlsdr-docker:latest
+manifests:
+  -
+    image: linarotechnologies/rtlsdr-docker:latest-arm64
+    platform:
+      architecture: arm64
+      os: linux
+  -
+    image: linarotechnologies/rtlsdr-docker:latest-armhf
+    platform:
+      architecture: arm
+      os: linux
+  -
+    image: linarotechnologies/rtlsdr-docker:latest-amd64
+    platform:
+      architecture: amd64
+      features:
+        - sse
+      os: linux
